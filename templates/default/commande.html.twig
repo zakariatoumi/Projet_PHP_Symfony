@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+<div class="container">
+<h1>Les pizzas</h1>
+<ul>
+{% for cm in cms %}
+    <li>{{ cm.adresse }}</li>
+    <li>{{ cm.nom }}</li>
+    <li>{{ cm.numTel }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}

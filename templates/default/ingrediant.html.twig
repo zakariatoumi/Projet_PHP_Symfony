@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+<div class="container">
+<h1>Les ingrediants</h1>
+<ul>
+
+{% for ingredient in ingredients %}
+
+<li> {{ [ingredient.name,   ingredient.id]| join }}</li>
+
+
+{% endfor %}
+
+</ul>
+</div>
+{% endblock %}

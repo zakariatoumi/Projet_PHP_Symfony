@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+{% block body %}
+<div class="container">
+<h1>Les pizzas</h1>
+<ul>
+{% for pizza in pizzas %}
+    <li>{{ pizza.name }}</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}
